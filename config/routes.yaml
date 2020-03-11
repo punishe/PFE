@@ -1,0 +1,8 @@
+home:
+  path: /
+  controller: App\Controller\homeController::index
+proporty:
+  path: /biens
+  controller: App\Controller\proportyController::index
+
+  
