@@ -7,8 +7,21 @@
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
+    <div class="topHeader">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-8 text-right links"><strong><i class="fa fa-phone"></i></strong> (+216)<strong> 
+                <a href="tel:71237237" rel="external">71 237 237 | 54 304 404</a></strong> <span><a href="/contact">
+                Contact</a>&nbsp;&nbsp;&nbsp;|</span> <span><strong><a href="/suivi">&nbsp; Suivi Réservation</a>
+                </strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</span>
+
+					<a href="https://www.facebook.com/myhotel.tn/" target="_blank"> <img src="/facebook.png" alt="myhotel"></a></div>
+                </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg C bg-warning navbar-expand-md py-md-2">
-     <a class="navbar-brand" href="{{ path('home') }}">   <img src="//placehold.it/120x29?text=Logo" class="img-fluid" alt="Responsive image"></a>
+     <a class="navbar-brand" href="{{ path('home') }}">   <img src="/images/proporties/logo2.png" alt="card-img-top" style="width: 60%; height:100%;border-radius: 8px;" ></a>
   <a class="navbar-brand" href="{{ path('home') }}">Acceuil</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,6 +45,7 @@
         
          </div>
 </nav>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

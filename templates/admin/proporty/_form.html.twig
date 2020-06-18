@@ -1,13 +1,24 @@
 
     {{ form_start(form) }}
     <dic class="row">
-        <div class="col-md-5">{{ form_row(form.title )}}</div>
-        <div class="col-md-5">{{ form_row(form.id_hotel )}}</div>
+        <div class="col-md-5">{{ form_row(form.nom_hotel )}}</div>
+        <div class="col-md-2">{{ form_row(form.categorie )}}</div>
+
+         <div class="col-md-3">{{ form_row(form.id)}}</div>
+
+         
    
              <div class="col-md-7">{{ form_row(form.description )}}</div>
-        <div class="col-md-4">{{ form_row(form.Surface )}}</div>
-        <div class="col-md-4">{{ form_row(form.capacite )}}</div>
-               <div class="col-md-2">{{ form_row(form.Tarif )}}</div>
+        
+
+               <div class="col-md-4">{{ form_row(form.ville )}}</div>
+                   <div class="col-md-2">{{ form_row(form.prix_LPDStandart )}}</div>
+                    <div class="col-md-2">{{ form_row(form.prix_PDstandart )}}</div>
+                    <div class="col-md-2">{{ form_row(form.prix_PCstandart )}}</div>
+                    <div class="col-md-2">{{ form_row(form.prix_AllISOFTstandart )}}</div>
+                    <div class="col-md-2">{{ form_row(form.prix_PCstandart )}}</div>
+                    <div class="col-md-2">{{ form_row(form.imageFile )}}</div>
+                    
            <button class="btn btn-warning">{{ button|default    ('Enregistrer')     }}</button>
      </div>
 

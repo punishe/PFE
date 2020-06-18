@@ -7,16 +7,26 @@
 <h2>HOTELS EN TUNISIE</h2>
     <div class="row flex">
         {% for proporty in proporties %}
-        <div class="col-3">
+        <div class="col-3" style="width: 100%; height:auto;">
             <div class="card">
+            {% if proporty.filename %}
+            <img src="/images/proporties/{{ proporty.filename }}" alt="card-img-top" style="width: 100%; height:auto;">
+            {% endif %}
                 <div class="card-body">
+                
                     <h5 class="card-title">
-                        <a href="#">{{ proporty.title }}</a>
+                        <a href="#">{{ proporty.NomHotel }}</a>
                     </h5>
+                   
+                    
                     <div class="card-text">
-                    {{ proporty.description }}
-                    <div class="text-primary">{{ proporty.tarif }}
+                    {{ proporty.ville }}
+                   
                     </div>
+                     <div class="card-text">
+                    <h4>
+                    {{ proporty.prixLPDStandart }}<p>DT</p>
+                   </h4>
                     </div>
                 </div>
             </div>
@@ -24,24 +34,5 @@
         {% endfor %}
     </div>
     <div class="container"><center>
-<h2>HOTELS EN TUNISIE</h2>
-    <div class="row flex">
-        {% for proporty in proporties %}
-        <div class="col-3">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a href="#">{{ proporty.title }}</a>
-                    </h5>
-                    <div class="card-text">
-                    {{ proporty.description }}
-                    <div class="text-primary">{{ proporty.tarif }}
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </diV>
-        {% endfor %}
-    </div>
-    </div>
+
 {% endblock %}

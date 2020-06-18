@@ -1,20 +1,20 @@
 <?php
 namespace App\Controller;
-use App\Entity\Proporty;
+use App\Entity\Hotel;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use App\Repository\ProportyRepository;
+use App\Repository\HotelRepository;
 
 class proportyController extends AbstractController
 {
     private $twig;
     /**
      * @var Environment
-     * @var ProportyRepository 
+     * @var HotelRepository 
      */
 
-    public function __construct(ProportyRepository $repository,$twig){
+    public function __construct(HotelRepository $repository,$twig){
         $this->twig=$twig;
         $this->repository = $repository;
     }
